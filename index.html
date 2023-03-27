@@ -14,17 +14,28 @@
         <input
         id="newtask"
           type="text"
-          
           name="new-task-description"
           placeholder="description"
         />
+      <!-- An additional input field (e.g. user, duration, date due) -->
+      <input type="text" placeholder="user" id="user">
+      <input type="text" placeholder="duration" id="duration">
+      <label for="priority">Choose Task Priority:</label>
+<select id="priority" name="priority">
+  <option value="Urgent">Urgent</option>
+  <option value="Less urgent">Less Urgent</option>
+
+</select>
 
         <input type="submit" class="btn" value="Submit" />
       </form>
 
       <div id="list">
         <h2>My Todos</h2>
-        <ol id="tasks"></ol>
+        <ol id="tasks">
+
+    <!-- tasks to appear here -->
+        </ol>
       </div>
 
       <script src="./src/index.js"></script>
